@@ -15,7 +15,11 @@ class Sanke:
     pass
 
 class Food:
-    pass
+    def __init__(self):
+        x = random.randint(0, (GAME_WIDTH/SPACE_SIZE)-1) * SPACE_SIZE
+        x = random.randint(0,(GAME_HEIGHT / SPACE_SIZE) -1) * SPACE_SIZE
+
+        self.coordinate = [x ,y]
 
 def next_turn():
     pass
@@ -56,5 +60,8 @@ x = int((screen_width/2) - (window_width/2))
 y = int((screen_height/2) -(window_height/2))
 
 window.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
+snake =Sanke()
+food = Food()
 
 window.mainloop()
