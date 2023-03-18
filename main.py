@@ -1,16 +1,37 @@
-# This is a sample Python script.
+from tkinter import *
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+GAME_WIDTH =700
+GAME_HEIGHT =700
+SPEED = 50
+SPACE_SIZE = 50
+BODY_PARTS =3
+SNAKE_COLOR = "#00FF00"
+FOOD_COLOR = "#FF0000"
+BACKGROUND_COLOR = "#000000"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Sanke:
+    pass
+
+class Food:
+    pass
+
+def next_turn():
+    pass
+
+def change_direction(new_direction):
+    pass
+
+def check_collisions():
+    pass
+
+def game_over():
+    pass
+
+window =Tk()
+window.title("Snake game")
+window.resizable(False,False)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+window.mainloop()
