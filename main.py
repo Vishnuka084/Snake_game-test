@@ -68,6 +68,9 @@ def change_direction(new_direction):
     if new_direction == 'left':
         if direction != 'right':
             direction = new_direction
+    if new_direction == 'right':
+        if direction != 'left':
+            direction = new_direction
 def check_collisions():
     pass
 
