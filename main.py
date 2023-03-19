@@ -62,8 +62,12 @@ def next_turn(snake , food ):
    window.after(SPEED ,next_turn,snake,food)
 
 def change_direction(new_direction):
-    pass
 
+    global direction
+
+    if new_direction == 'left':
+        if direction != 'right':
+            direction = new_direction
 def check_collisions():
     pass
 
@@ -98,6 +102,10 @@ y = int((screen_height/2) -(window_height/2))
 
 window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
+window.bind('<Left',lambda event:change_direction('left'))
+window.bind('<Right',lambda event:change_direction('right'))
+window.bind('<Up',lambda event:change_direction('up'))
+window.bind('<Down',lambda event:change_direction('down'))
 snake =Sanke()
 food = Food()
 
